@@ -1,7 +1,7 @@
 ---
 title: 'Chrome Extensions for Computer Science Grads'
 date: 2019-11-24
-permalink: /posts/chrome-extensions-for-computer-science-grads/
+permalink: /blogs/chrome-extensions-for-computer-science-grads/
 tags:
   - CS
 ---
