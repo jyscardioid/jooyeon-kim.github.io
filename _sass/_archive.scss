@@ -1,3 +1,15 @@
+.publication {
+  .publication-text {
+    margin: 0 0 0.3em;
+  }
+  strong {
+    color: $my-secondary-color;
+  }
+  .link-buttons {
+    margin: 0 0 0.8em;
+  }
+}
+
 /* ==========================================================================
    ARCHIVE
    ========================================================================== */
@@ -15,15 +27,19 @@
   }
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
-
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
     }
+  }
+}
+
+.archive__item {
+  p {
+    margin: 0 0 0.5rem 0;
   }
 }
 
@@ -50,6 +66,10 @@
 
 /* remove border*/
 .page__content {
+
+  a {
+    text-decoration: none;
+  }
 
   .archive__item-title {
     margin-top: 1em;
@@ -79,9 +99,11 @@
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
 
+  /*
   .archive__item-title {
     text-decoration: underline;
   }
+  */
 }
 
 

@@ -10,12 +10,11 @@ redirect_from:
 
 I am a Ph.D. student at KAIST School of Computing, advised by [Alice Oh](https://aliceoh9.github.io/).
 
-## Recent Publication
+## Recent Publications
 
-- Supervised Graph Attention Network for Semi-Supervised Node Classification, **Dongkwan Kim** and Alice Oh, *Workshop on Graph Representation Learning at NeurIPS 2019* (NeurIPS 2019 GRL) [[PDF]](https://grlearning.github.io/papers/103.pdf)
-- Additive Compositionality of Word Vectors, EMNLP 2019 W-NUT, Yeon Seonwoo, Sungjoon Park, **Dongkwan Kim**, and Alice Oh, *Workshop on Noisy User-generated Text at EMNLP 2019* (EMNLP 2019 W-NUT) [[PDF]](https://www.aclweb.org/anthology/D19-5551.pdf)
-- Homogeneity-Based Transmissive Process To Model True and False News in Social Networks, Jooyeon Kim, **Dongkwan Kim**, and Alice Oh, *Proceedings of the 12th ACM International Conference on Web Search and Data Mining* (WSDM 2019) [[PDF]](https://arxiv.org/abs/1811.09702) [[ACM DL]](https://dl.acm.org/citation.cfm?id=3291009) [[Code & Data]](https://github.com/dongkwan-kim/HBTP)
-
+{% for post in site.publications reversed limit:5 %}
+{% include archive-short.html %}
+{% endfor %}
 
 ## Education
 

@@ -1,0 +1,13 @@
+<div class="publication">
+  <p class="publication-text">
+    {{post.title}}, {{post.authors | replace: "Dongkwan Kim", "<strong>Dongkwan Kim</strong>"}}, <em>{{post.venue}}</em>, {{post.date | date: "%Y"}}
+  </p>
+  {% if post.pdfurl %}
+  <p class="link-buttons">
+    <a href=" {{ post.pdfurl }} " target="_blank">PDF</a>
+    {% if post.codeurl %}<a href=" {{ post.codeurl }} " target="_blank">Code</a>{% endif %}
+    {% if post.dataurl %}<a href=" {{ post.dataurl }} " target="_blank">Data</a>{% endif %}
+    {% if post.posterurl %}<a href=" {{ post.posterurl }} " target="_blank">Poster</a>{% endif %}
+  </p>
+  {% endif %}
+</div>

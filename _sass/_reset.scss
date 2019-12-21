@@ -31,7 +31,7 @@ body { margin: 0; }
 
 ::selection {
   color: #fff;
-  background: #000;
+  background: $my-secondary-color;
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */
@@ -81,6 +81,8 @@ a:focus {
 a:hover,
 a:active {
   outline: 0;
+  color: $link-color-hover;
+  transition: all .5s ease;
 }
 
 /* Prevent sub and sup affecting line-height in all browsers */
