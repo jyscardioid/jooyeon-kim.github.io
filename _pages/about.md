@@ -28,3 +28,5 @@ I am a Ph.D. student at KAIST School of Computing, advised by [Alice Oh](https:/
   Head Teaching Assistant (Fall 2018)
 - *CS492C Machine Learning and Natural Language Processing*, KAIST  
   Head Teaching Assistant (Fall 2019)
+- [*CS492H Deep Learning for Real-world Problems*](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83), KAIST  
+  Head Teaching Assistant (Spring 2020)
