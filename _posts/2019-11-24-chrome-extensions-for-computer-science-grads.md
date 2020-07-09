@@ -8,6 +8,8 @@ tags:
 
 A list of Chrome Extensions that might be useful to computer science graduate students.
 
+## General
+
 ### [Dark Reader](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh)
 Inverts brightness of web pages and aims to reduce eyestrain while browsing the web.
 
@@ -26,10 +28,15 @@ Use Grammarly on Chrome.
 ### [Rooster for Chrome™](https://chrome.google.com/webstore/detail/rooster-for-chrome/pimolnhbniceppehbgmibnbgcnhpkhfh)
 Stay productive by giving you insights on browsing habits and by notifying.
 
-### [ShowAsIs](https://chrome.google.com/webstore/detail/showasis/lehpimiaaocmlkoebjgkokglapbadpdh)
+## For Machine Learning
 
+### [Code Finder for Research Papers - CatalyzeX](https://chrome.google.com/webstore/detail/code-finder-for-research/aikkeehnlfpamidigaffhfmgbkdeheil)
+Finds and shows links to code implementations for research papers directly on Google, Arxiv, Scholar, Twitter, Github, and more.
+
+## For Koreans
+
+### [ShowAsIs](https://chrome.google.com/webstore/detail/showasis/lehpimiaaocmlkoebjgkokglapbadpdh)
 Use CJK fonts in google slides.
 
 ### [Find Korea from Dropdowns](https://chrome.google.com/webstore/detail/find-korea-from-dropdowns/lfphjcfkgaiiojhbippbghhdikoibedi)
-
 Find Korea when you go to academic conferences.
