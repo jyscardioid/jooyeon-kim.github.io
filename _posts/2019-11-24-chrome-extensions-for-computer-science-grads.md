@@ -40,3 +40,8 @@ Use CJK fonts in google slides.
 
 ### [Find Korea from Dropdowns](https://chrome.google.com/webstore/detail/find-korea-from-dropdowns/lfphjcfkgaiiojhbippbghhdikoibedi)
 Find Korea when you go to academic conferences.
+
+## Not a Chrome Extension, but Still Useful
+
+### [Auto-LaTeX Equations](https://gsuite.google.com/marketplace/app/autolatex_equations/850293439076?pann=cwsdp&hl=ko)
+Instantly convert every math equation in Google Docs documents into latex images.
