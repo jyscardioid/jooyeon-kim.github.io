@@ -28,6 +28,9 @@ Use Grammarly on Chrome.
 ### [Rooster for Chrome™](https://chrome.google.com/webstore/detail/rooster-for-chrome/pimolnhbniceppehbgmibnbgcnhpkhfh)
 Stay productive by giving you insights on browsing habits and by notifying.
 
+### [Copy BibTex in 1 click on GScholar](https://chrome.google.com/webstore/detail/bib-%E2%80%94-copy-bibtex-in-1-cl/onnmdchfagapkggbhnnjkmllimegclnh/related)
+Copy BibTex from GScholar result page with 1 click!
+
 ## For Machine Learning
 
 ### [Code Finder for Research Papers - CatalyzeX](https://chrome.google.com/webstore/detail/code-finder-for-research/aikkeehnlfpamidigaffhfmgbkdeheil)
