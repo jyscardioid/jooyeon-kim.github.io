@@ -4,6 +4,7 @@ date: 2020-02-20
 permalink: /blogs/install-pytorch-with-cuda-10/
 tags:
   - CS
+  - Machine Learning
 ---
 
 To fix PyTorch CUDA version error like below:

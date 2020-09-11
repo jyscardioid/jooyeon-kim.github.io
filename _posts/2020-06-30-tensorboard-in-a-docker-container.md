@@ -4,6 +4,7 @@ date: 2020-06-30
 permalink: /blogs/tensorboard-in-a-docker-container/
 tags:
   - CS
+  - Machine Learning
 ---
 
 When creating a container, forward two ports 22 (for ssh) and 6006 (for Tensorboard).

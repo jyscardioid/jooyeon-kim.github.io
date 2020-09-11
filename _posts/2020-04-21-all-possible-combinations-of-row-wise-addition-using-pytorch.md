@@ -4,6 +4,7 @@ date: 2020-04-21
 permalink: /blogs/all-possible-combinations-of-row-wise-addition-using-pytorch/
 tags:
   - CS
+  - Machine Learning
 ---
 
 How to get all possible combinations of row-wise addition (or substraction) using PyTorch?
