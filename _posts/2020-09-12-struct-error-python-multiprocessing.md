@@ -30,9 +30,8 @@ I don't know whether there is an elegant solution, but it can be solved by decla
 from multiprocessing import Pool
 
 def f(data_id):
-    global large_data
+    global big_data
     large_data = big_data
-    # something
 
 if __name__ == '__main__':
     big_data = Data()
