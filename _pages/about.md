@@ -21,12 +21,12 @@ I am a Ph.D. student at KAIST School of Computing, advised by [Alice Oh](https:/
 - M.S. in School of Computing, *KAIST*, 2019.08
 - B.S. in School of Computing, *KAIST*, 2018.02
 
+## Academic Services
+
+- Reviewer of ICLR (2020), ICML GRL+ Workshop (2020)
+
 ## Teaching Experiences
 
-- *CS206 Data Structure*, KAIST  
-  Teaching Assistant (Spring 2018)  
-  Head Teaching Assistant (Fall 2018)
-- *CS492C Machine Learning and Natural Language Processing*, KAIST  
-  Head Teaching Assistant (Fall 2019)
-- [*CS492H Deep Learning for Real-world Problems*](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83), KAIST  
-  Head Teaching Assistant (Spring 2020)
+- TA (Spring 2018), Head TA (Fall 2018) of Data Structure CS206
+- Head TA (Fall 2019) of [Machine Learning and Natural Language Processing](https://aliceoh9.github.io/mlnlp) CS492C (Best TA Award)
+- Head TA (Spring 2020, Fall 2020) of [Deep Learning for Real-world Problems](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83) CS492H/I (Best TA Award at Spring 2020)
