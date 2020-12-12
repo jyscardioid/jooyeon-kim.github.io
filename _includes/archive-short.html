@@ -5,9 +5,10 @@
     <a href="{{base_path}}{{post.permalink}}">{{post.title}}</a>,
     <em>{{post.venue}}</em>, {{post.date | date: "%Y"}}
   </p>
-  {% if post.pdfurl %}
+  {% if post.paperurl %}
   <p class="link-buttons">
-    <a href=" {{ post.pdfurl }} " target="_blank">PDF</a>
+    <a href=" {{ post.paperurl }} " target="_blank">Paper</a>
+    {% if post.arxivurl %}<a href=" {{ post.arxivurl }} " target="_blank">arXiv</a>{% endif %}
     {% if post.codeurl %}<a href=" {{ post.codeurl }} " target="_blank">Code</a>{% endif %}
     {% if post.dataurl %}<a href=" {{ post.dataurl }} " target="_blank">Data</a>{% endif %}
     {% if post.posterurl %}<a href=" {{ post.posterurl }} " target="_blank">Poster</a>{% endif %}
