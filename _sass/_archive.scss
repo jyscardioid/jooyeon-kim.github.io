@@ -2,11 +2,26 @@
   .publication-text {
     margin: 0 0 0.3em;
   }
-  strong {
-    color: $my-secondary-color;
-  }
   .link-buttons {
     margin: 0 0 0.8em;
+  }
+}
+
+.linear-wipe {
+  // https://codepen.io/shshaw/pen/YpERQQ
+  text-align: center;
+  background: linear-gradient(to right, $my-secondary-color 20%, $my-primary-color 40%, $my-primary-color 60%, $my-secondary-color 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
   }
 }
 
