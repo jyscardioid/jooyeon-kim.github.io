@@ -28,5 +28,5 @@ I am a Ph.D. student at KAIST School of Computing, advised by [Alice Oh](https:/
 ## Teaching Experiences
 
 - TA (Spring 2018), Head TA (Fall 2018) of Data Structure CS206
-- Head TA (Fall 2019) of [Machine Learning and Natural Language Processing](https://aliceoh9.github.io/mlnlp) CS492C (Best TA Award)
-- Head TA (Spring 2020, Fall 2020) of [Deep Learning for Real-world Problems](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83) CS492H/I (Best TA Award at Spring 2020)
+- Head TA (Fall 2019), TA (Spring 2021) of Machine Learning for Natural Language Processing [CS492C](https://aliceoh9.github.io/mlnlp)/[CS475](https://uilab-kaist.github.io/cs475-mlnlp-spring-2021/) (Best TA Award at Fall 2019)
+- Head TA (Spring 2020, Fall 2020) of [Deep Learning for Real-world Problems](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83) CS492H/CS492I (Best TA Award at Spring 2020)
