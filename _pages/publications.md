@@ -18,7 +18,9 @@ author_profile: true
 {% assign publication_groups = site.publications | group_by: "type" %}
 {% for publications in publication_groups %}
   <h2 class="archive__subtitle">{{publications.name | capitalize}}</h2>
+  {% assign prefix = publications.name | slice: 0 | capitalize %}
   {% for post in publications.items reversed %}
+    {% assign pub_index = forloop.length | minus: forloop.index0 %}
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
