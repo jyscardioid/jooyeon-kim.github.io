@@ -5,6 +5,7 @@ collection: publications
 permalink: /publications/2019-11-emnlp-w-nut
 date: 2019-11-04
 venue: 'Workshop on Noisy User-generated Text at EMNLP (EMNLP W-NUT)'
+type: workshop
 paperurl: 'https://www.aclweb.org/anthology/D19-5551/'
 ---
 
