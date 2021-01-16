@@ -20,7 +20,7 @@ author_profile: true
   <h2 class="archive__subtitle">{{publications.name | capitalize}}</h2>
   {% assign prefix = publications.name | slice: 0 | capitalize %}
   {% for post in publications.items reversed %}
-    {% assign pub_index = forloop.length | minus: forloop.index0 %}
+    {% assign prefix_index = forloop.length | minus: forloop.index0 %}
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
