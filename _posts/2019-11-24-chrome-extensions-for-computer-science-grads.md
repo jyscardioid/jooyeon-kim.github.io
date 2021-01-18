@@ -25,6 +25,10 @@ Display tabs vertically in a sidebar on web pages. Support drag-and-drop, search
 ### [Grammarly for Chrome](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen)
 Use Grammarly on Chrome.
 
+### [Overleaf textarea](https://chrome.google.com/webstore/detail/overleaf-textarea/iejmieihafhhmjpoblelhbpdgchbckil/)
+This plugin displays your text in a textarea so you can use spellcheck plugins like Grammarly.
+(It may not be that effective if your paper contains a bunch of equations.)
+
 ### [Rooster for Chrome™](https://chrome.google.com/webstore/detail/rooster-for-chrome/pimolnhbniceppehbgmibnbgcnhpkhfh)
 Stay productive by giving you insights on browsing habits and by notifying.
 
