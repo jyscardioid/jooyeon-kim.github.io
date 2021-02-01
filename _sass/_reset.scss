@@ -30,7 +30,7 @@ body { margin: 0; }
 }
 
 ::selection {
-  color: #fff;
+  color: $background-color;
   background: $my-secondary-color;
 }
 
