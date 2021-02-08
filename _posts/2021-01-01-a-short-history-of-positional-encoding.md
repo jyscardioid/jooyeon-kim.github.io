@@ -1,9 +1,8 @@
 ---
 title: 'A Short History of Positional Encoding'
-date: 2021-01-30
+date: 2021-02-09
 permalink: /blogs/a-short-history-of-positoinal-encoding/
 tags:
-  - CS
   - Machine Learning
 ---
 
@@ -21,7 +20,16 @@ In this post, I review the work related to positional encoding and describe what
 
 ### Learned Positional Embedding
 
-[Gehring et al., 2017 (ConvS2S)](https://arxiv.org/abs/1705.03122)
+Prior Transformers, [Gehring et al., 2017 (ConvS2S)](https://arxiv.org/abs/1705.03122) replaces recurrent neural networks with convolutional neural networks for the sequence to sequence learning. It might be less effective than attention-only-modules, but convolution is able to exploit the parallelism of GPU hardware rather than recurrent units. Since the convolution operator only sees the sequence's part, it can only learn the word orders within kernel size and not the whole context. That is why ConvS2S uses additional embedding to let the model know the input's position.
+
+Its implementation is straightforward. Positional embedding in ConvS2S is a just learnable parameter with the same dimension of the word embedding. 
+```python
+# https://github.com/pytorch/fairseq/blob/master/fairseq/modules/positional_embedding.py#L25-L26
+m = LearnedPositionalEmbedding(num_embeddings, embedding_dim, padding_idx)
+nn.init.normal_(m.weight, mean=0, std=embedding_dim ** -0.5)
+```
+
+[Vaswani et al., 2017 (Transformer)](https://arxiv.org/abs/1706.03762) compares ConvS2S' learned positional embedding and their sinusoidal embedding, and the performances are almost the same. It also argues that "sinusoidal version may allow the model to extrapolate to sequence lengths longer than the ones encountered during training".
 
 ### Positional Encoding with Sinusoids 
 
