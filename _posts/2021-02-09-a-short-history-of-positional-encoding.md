@@ -1,7 +1,7 @@
 ---
 title: 'A Short History of Positional Encoding'
 date: 2021-02-09
-permalink: /blogs/a-short-history-of-positoinal-encoding/
+permalink: /blogs/a-short-history-of-positional-encoding/
 tags:
   - Machine Learning
 ---
