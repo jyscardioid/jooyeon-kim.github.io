@@ -9,6 +9,7 @@ redirect_from:
 ---
 
 I am a Ph.D. student at KAIST School of Computing, advised by [Alice Oh](https://aliceoh9.github.io/).
+My research interests are in developing graph representation learning models and applying them for various domains: social networks, codes, or chemicals.
 
 ## Recent Publications
 
@@ -18,8 +19,8 @@ I am a Ph.D. student at KAIST School of Computing, advised by [Alice Oh](https:/
 
 ## Education
 
-- M.S. in School of Computing, *KAIST*, 2019.08
-- B.S. in School of Computing, *KAIST*, 2018.02
+- M.S. School of Computing, *KAIST*, 2019.08
+- B.S. Major in School of Computing and Minor in Chemistry, *KAIST*, 2018.02
 
 ## Academic Services
 
