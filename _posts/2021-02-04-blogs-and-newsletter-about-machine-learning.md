@@ -24,6 +24,7 @@ Here is a list of blogs and newsletters about machine learning that I follow (or
 - [Jay's ML Blog](https://jalammar.github.io/)
 - [Amit Chaudhary](https://amitness.com/)
 - [Eric Jang](http://evjang.com/)
+- [Gregory Gundersen](http://gregorygundersen.com/blog/)
 
 ## Blogs (Organization)
 
