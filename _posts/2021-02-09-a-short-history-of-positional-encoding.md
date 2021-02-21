@@ -33,7 +33,26 @@ nn.init.normal_(m.weight, mean=0, std=embedding_dim ** -0.5)
 
 ### Positional Encoding with Sinusoids 
 
-[Vaswani et al., 2017 (Transformer)](https://arxiv.org/abs/1706.03762)
+As we can see from the title, [Attention Is All You Need](https://arxiv.org/abs/1706.03762), Transformers fully replace the recurrent units with attention. Unlike the recurrent unit, the attention computation across tokens can be fully parallelized, that is, they do not have to wait for the calculation of the previous token's representation to get the current token's representation. However, in return for the grace of parallelization, Transformers gave up the inductive bias of recurrence that RNNs have. Without positional encoding, the Transformer is permutation-invariant as an operation on sets. For example, "Alice follows Bob" and "Bob follows Alice" are completely different sentences, but a Transformer without position information will produce the same representation. Therefore, the Transformer explicitly encodes the position information.
+
+Their proposed sinusoidal positional encoding is probably the most famous variant of positional encoding in transformer-like models. These are composed of sine and cosine values with position index as input.
+
+$$
+\begin{aligned}
+PE_{(\text{pos},\ 2i)} &=\sin \left(\operatorname{pos} / 10000^{2 i / d_{\text {model }}}\right) \\
+PE_{(\text{pos},\ 2i+1)} &=\cos \left(\operatorname{pos} / 10000^{2 i / d_{\text {model }}}\right)
+\end{aligned}
+$$
+
+If we draw this equation, it looks like Figure 1.
+
+{% include figure.html
+  figure_number="1"
+  url="/images/sinusoidal-pe.png"
+  description="Visualization of sinusoidal positional encoding."
+  source_description="TensorFlow tutorial: Transformer model for language understanding"
+  source_url="https://www.tensorflow.org/tutorials/text/transformer?hl=en"
+%}
 
 ### Relative Positional Encoding
 
