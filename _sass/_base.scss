@@ -191,12 +191,17 @@ figure {
   -webkit-box-align: start;
           align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 1em auto 1em;
+  text-align: center;
+  width: 80%;
+  border-bottom: 1px solid;
+  padding-bottom: 1em;
 
   img,
   iframe,
   .fluid-width-video-wrapper {
     margin-bottom: 1em;
+    background-color: white;
   }
 
   img {
@@ -240,15 +245,13 @@ figure {
 /* Figure captions */
 
 figcaption {
-  margin-bottom: 0.5em;
-  color: mix(#fff, $text-color, 25%);
   font-family: $caption-font-family;
-  font-size: $type-size-6;
+  margin: 0 auto 0;
 
   a {
     color: inherit;
+    font-style: italic;
     text-decoration: none;
-    border-bottom: 1px solid $light-gray;
     -webkit-transition: $global-transition;
     transition: $global-transition;
 
@@ -257,6 +260,15 @@ figcaption {
       border-bottom-color: #000;
     }
   }
+
+
+}
+
+.figsource {
+  font-family: $caption-font-family;
+  margin: 0 auto 0;
+  text-decoration: none;
+  font-size: $type-size-6;
 }
 
 
