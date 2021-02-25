@@ -4,6 +4,7 @@ date: 2020-09-12
 permalink: /blogs/struct-error-python-multiprocessing/
 tags:
   - CS
+summary: ""
 ---
 
 When using Python `multiprocessing.Pool` to process large data, I met this strange error.

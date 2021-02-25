@@ -4,6 +4,7 @@ date: 2018-07-23
 permalink: /blogs/stochastic-variaional-inference-with-score-estimator/
 tags:
   - Machine Learning
+summary: ""
 ---
 
 For the following optimization problem, minimizing KL divergence from $q_{\theta}(x)$ to $p(x\|y_0)$,

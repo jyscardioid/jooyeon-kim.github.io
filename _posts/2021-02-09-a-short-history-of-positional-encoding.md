@@ -4,6 +4,7 @@ date: 2021-02-09
 permalink: /blogs/a-short-history-of-positional-encoding/
 tags:
   - Machine Learning
+summary: "*Note: I am still writing this post.*"
 ---
 
 Since I first saw the 'Attention Is All You Need' paper, I had a strong curiosity about the principle and theory of positional encoding.

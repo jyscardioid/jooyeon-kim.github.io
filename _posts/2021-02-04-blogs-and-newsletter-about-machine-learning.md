@@ -5,6 +5,7 @@ permalink: /blogs/blogs-and-newsletter-about-machine-learning/
 tags:
   - CS
   - Machine Learning
+summary: ""
 ---
 
 Here is a list of blogs and newsletters about machine learning that I follow (or regularly read).

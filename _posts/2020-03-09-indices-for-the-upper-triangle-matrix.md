@@ -4,6 +4,7 @@ date: 2020-03-07
 permalink: /blogs/indices-for-the-upper-triangle-matrix/
 tags:
   - CS
+summary: ""
 ---
 
 Recently, I implemented the negative edge sampling of undirected graphs for [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/). Since $(i, j)$ and $(j, i)$ are the same edge in the undirected graph, I sample entries from the upper triangle of the given adjacency matrix. Easy solution is using [`numpy.triu_indices`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.triu_indices.html), but this suffers from $O(N^2)$ memory complexity (for $G = (V, E)$ and $N = \|V\|$) from the possible edge space $V \times V$.

@@ -4,6 +4,7 @@ date: 2019-11-24
 permalink: /blogs/chrome-extensions-for-computer-science-grads/
 tags:
   - CS
+summary: ""
 ---
 
 A list of Chrome Extensions that might be useful to computer science graduate students.
