@@ -1,5 +1,5 @@
 ---
-title: 'Tensorboard in a Docker Container'
+title: 'Run Tensorboard (or Jupyter) in a Remote Docker Container'
 date: 2020-06-30
 permalink: /blogs/tensorboard-in-a-docker-container/
 tags:
@@ -18,7 +18,7 @@ We can access a container with ssh by,
 ssh <user>@<host> -p 8082
 ```
 
-In a remote container, run Tensorboard with port 6006.
+In a remote container, run Tensorboard with 6006 (the default port).
 ```bash
 tensorboard --logdir lightning_logs
 ```
@@ -34,3 +34,5 @@ ssh -L 8083:127.0.0.1:6006 <user>@<host> -p 8082
 ```
 
 Now, we can access the Tensorboard web interface using address `localhost:8083` in a local machine.
+
+You can use Jupyter in the same way. Just change 6006 to 8888 (the default port in Jupyter).
