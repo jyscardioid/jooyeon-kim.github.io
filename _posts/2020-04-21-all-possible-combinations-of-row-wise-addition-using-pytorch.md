@@ -3,8 +3,7 @@ title: 'All Possible Combinations of Row-wise Addition Using PyTorch'
 date: 2020-04-21
 permalink: /blogs/all-possible-combinations-of-row-wise-addition-using-pytorch/
 tags:
-  - CS
-  - Machine Learning
+  - Machine Learning Engineering
 summary: ""
 ---
 

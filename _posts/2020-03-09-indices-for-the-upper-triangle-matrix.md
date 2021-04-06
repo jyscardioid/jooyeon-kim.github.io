@@ -3,7 +3,7 @@ title: 'Analytic Expressions of Indices for the Upper-triangle Matrix'
 date: 2020-03-07
 permalink: /blogs/indices-for-the-upper-triangle-matrix/
 tags:
-  - CS
+  - Machine Learning Engineering
 summary: ""
 ---
 

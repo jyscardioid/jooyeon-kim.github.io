@@ -3,7 +3,7 @@ title: 'Handing Struct Error when Using Python Multi-processing Pool'
 date: 2020-09-12
 permalink: /blogs/struct-error-python-multiprocessing/
 tags:
-  - CS
+  - General Computer Science & Engineering
 summary: ""
 ---
 

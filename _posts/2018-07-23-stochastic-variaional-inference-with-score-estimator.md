@@ -3,7 +3,7 @@ title: 'Stochastic Variaional Inference with Score Estimator'
 date: 2018-07-23
 permalink: /blogs/stochastic-variaional-inference-with-score-estimator/
 tags:
-  - Machine Learning
+  - Machine Learning Research
 summary: ""
 ---
 

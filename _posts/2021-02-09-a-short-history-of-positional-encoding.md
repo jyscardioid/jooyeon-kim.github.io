@@ -3,7 +3,7 @@ title: 'A Short History of Positional Encoding'
 date: 2021-02-09
 permalink: /blogs/a-short-history-of-positional-encoding/
 tags:
-  - Machine Learning
+  - Machine Learning Research
 summary: "*Note: I am still writing this post.*"
 ---
 

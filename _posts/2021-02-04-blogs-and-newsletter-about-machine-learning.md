@@ -3,8 +3,8 @@ title: 'Blogs and Newsletters about Machine Learning'
 date: 2021-02-04
 permalink: /blogs/blogs-and-newsletter-about-machine-learning/
 tags:
-  - CS
-  - Machine Learning
+  - Machine Learning Research
+  - Machine Learning Engineering
 summary: ""
 ---
 

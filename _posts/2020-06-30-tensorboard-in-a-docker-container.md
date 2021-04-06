@@ -3,8 +3,7 @@ title: 'Run Tensorboard (or Jupyter) in a Remote Docker Container'
 date: 2020-06-30
 permalink: /blogs/tensorboard-in-a-docker-container/
 tags:
-  - CS
-  - Machine Learning
+  - Machine Learning Engineering
 summary: ""
 ---
 

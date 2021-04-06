@@ -3,8 +3,7 @@ title: 'Install PyTorch with CUDA 10.0'
 date: 2020-02-20
 permalink: /blogs/install-pytorch-with-cuda-10/
 tags:
-  - CS
-  - Machine Learning
+  - Machine Learning Engineering
 summary: ""
 ---
 
