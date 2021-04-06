@@ -1,6 +1,6 @@
 ---
 title: 'Use a Docker Container like a Remote Server'
-date: 2021-02-09
+date: 2021-04-06
 permalink: /blogs/use-a-docker-container-like-a-remote-server/
 tags:
   - CS
