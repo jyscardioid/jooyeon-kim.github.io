@@ -4,6 +4,7 @@ date: 2021-02-09
 permalink: /blogs/use-a-docker-container-like-a-remote-server/
 tags:
   - CS
+summary: ""
 ---
 
 This post describes how to use a Docker container like a single isolated remote server.
@@ -31,8 +32,8 @@ Create a container based on this image.
 docker run -ti \
   --runtime=nvidia \
   --name $container_name \
-  -p $ssh_port:22 -p $tensorboard_or_jupyter_port:6006
-  -v $mount_dir:$mount_dir
+  -p $ssh_port:22 -p $tensorboard_or_jupyter_port:6006 \
+  -v $mount_dir:$mount_dir \
   -d nvidia/cuda:10.2-cudnn8-devel-ubuntu18.04 /bin/bash
 ```
 - If you want to use GPUs in the container, you have to specify `--runtime=nvidia`.
