@@ -104,8 +104,23 @@ layout: default
 </div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.0/anchor.min.js"></script>
 <script>
+function copy_to_clipboard(val) {
+  var dummy = document.createElement("textarea");
+  document.body.appendChild(dummy);
+  dummy.value = val;
+  dummy.select();
+  document.execCommand("copy");
+  document.body.removeChild(dummy);
+}
 document.addEventListener("DOMContentLoaded", function(event) {
+  const headers = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+  const selector = headers.map(h => ('.page__content > ' + h)).join(', ');
   anchors.options.placement = 'left';
-  anchors.add('article section h1, h2, h3, h4, h5, h6');
+  anchors.add(selector);
+  var links = document.querySelectorAll(selector);
+    for(var i = 0; i < links.length; i++) {
+      const url = window.location.href + "#" + links[i].id;
+      links[i].setAttribute('onclick', `copy_to_clipboard('${url}')`);
+    }
 });
 </script>
