@@ -17,6 +17,8 @@ We can access a container with ssh by,
 ssh <user>@<host> -p 8082
 ```
 
+## Access through localhost
+
 In a remote container, run Tensorboard with 6006 (the default port).
 ```bash
 tensorboard --logdir lightning_logs
@@ -32,6 +34,16 @@ In a local machine, bind local's 8083 port to remote's 6006 port.
 ssh -L 8083:127.0.0.1:6006 <user>@<host> -p 8082
 ```
 
-Now, we can access the Tensorboard web interface using address `localhost:8083` in a local machine.
+Now, we can access the Tensorboard web interface using the address `localhost:8083` in a local machine.
 
 You can use Jupyter in the same way. Just change 6006 to 8888 (the default port in Jupyter).
+
+## Access through IP address or domain name
+
+If you want to access the Tensorboard through the IP address or domain name of the server, add `--host 0.0.0.0` to tensorboard command.
+
+```bash
+tensorboard --logdir lightning_logs --host 0.0.0.0
+```
+
+You can access the Tensorboard page with `http://<host>:8083` on any kind of machine connected to the internet.
