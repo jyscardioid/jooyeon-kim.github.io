@@ -34,12 +34,14 @@ docker run -ti \
   --name $container_name \
   -p $ssh_port:22 -p $tensorboard_or_jupyter_port:6006 \
   -v $mount_dir:$mount_dir \
+  --ipc=host \
   -d nvidia/cuda:10.2-cudnn8-devel-ubuntu18.04 /bin/bash
 ```
 - If you want to use GPUs in the container, you have to specify `--runtime=nvidia`.
 - You have to forward 22 port (ssh) to your own port.
 - If you want to use a Tensorboard or Jupyter, you have to forward additional ports for these.
 - If you want to use file systems in the host machine, you have to bind mount a volume (`-v $mount_dir:$mount_dir`) using absolute paths.
+- If you want to use multiple subprocesses (`num_workers` > 1) in `DataLoader`, it is recommend to put `--ipc=host`.
 - If you want to use a specific set of GPUs, use `--gpus` argument. (e.g., `--gpus '"device=0,1,2,3"'`).
 
 Now attach your container.
