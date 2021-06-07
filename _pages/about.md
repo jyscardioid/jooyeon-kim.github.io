@@ -24,8 +24,8 @@ My research interests are in developing graph representation learning models and
 
 ## Academic Services
 
-- Reviewer: ICLR (2020), ICML GRL+ Workshop (2020)
-- Student volunteer: ICLR ([2021](https://github.com/dongkwan-kim/iclr-2021-sv))
+- Reviewer: ICLR (2020), ICML GRL+ Workshop ([2020](https://grlplus.github.io/pcom/))
+- Student volunteer: ICLR ([2021](https://iclr.cc/Conferences/2021/Volunteers))
 
 ## Teaching Experiences
 
