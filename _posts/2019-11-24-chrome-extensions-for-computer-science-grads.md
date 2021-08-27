@@ -23,6 +23,9 @@ Simplifies the GitHub interface and adds useful features
 ### [Copy BibTex in 1 click on GScholar](https://chrome.google.com/webstore/detail/bib-%E2%80%94-copy-bibtex-in-1-cl/onnmdchfagapkggbhnnjkmllimegclnh/related)
 Copy BibTex from GScholar result page with 1 click!
 
+### [BibTex It!](https://chrome.google.com/webstore/detail/bibtex-it/hofkoiddldajhihgjbckeffpodeoockc)
+This extension gets your bibtex citation through your text selection within one-click.
+
 ### [Redirectify](https://chrome.google.com/webstore/detail/redirectify/mhjmbfadcbhilcfdhkkepffbnjaghfie)
 Redirects requests for PDFs of papers at some popular sites to their corresponding HTML index pages.
 (For example, [this pdf link](https://arxiv.org/pdf/1602.07527.pdf) redirects to [this webpage](https://arxiv.org/abs/1602.07527))
