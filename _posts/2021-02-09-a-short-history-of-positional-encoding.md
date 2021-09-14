@@ -60,9 +60,9 @@ If we draw this equation, it looks like Figure 1.
 [Shaw et al., 2018](https://arxiv.org/abs/1803.02155),
 [Dai et al., 2019 (Transformer-XL)](https://arxiv.org/abs/1901.02860)
 
-### Word Order Encoding
+### Learning to Encode Position for Transformer with Continuous Dynamical Model
 
-[Wang et al., 2020](https://openreview.net/forum?id=Hke-WTVtwr)
+[Liu et al., 2020 (FLOATER)](http://proceedings.mlr.press/v119/liu20n.html)
 
 ### Rethinking Positional Encoding
 
@@ -74,6 +74,7 @@ If we draw this equation, it looks like Figure 1.
 
 [Xu et al., 2019 (Bochner/Mercer Time Embedding)](https://arxiv.org/abs/1911.12864),
 [Kazemi et al., 2019 (time2vec)](https://arxiv.org/abs/1907.05321),
+[Voelker et al., 2019 (Legendre Memory Units)](https://papers.nips.cc/paper/2019/hash/952285b9b7e7a1be5aa7849f32ffff05-Abstract.html)
 [Xu et al., 2021 (Temporal Kernel)](https://openreview.net/forum?id=whE31dn74cL),
 [Shukla and Marlin, 2021 (Multi-time attention)](https://openreview.net/forum?id=mXbhcalKnYM)
 
