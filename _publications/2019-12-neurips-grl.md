@@ -5,6 +5,7 @@ collection: publications
 permalink: /publications/2019-12-neurips-grl
 date: 2019-12-09
 venue: 'Workshop on Graph Representation Learning at NeurIPS (NeurIPS GRL)'
+venueurl: 'https://grlearning.github.io/'
 type: workshop
 paperurl: 'https://grlearning.github.io/papers/103.pdf'
 summary: "*Note: The [full version](/publications/2021-05-iclr) is published at ICLR 2021.*"

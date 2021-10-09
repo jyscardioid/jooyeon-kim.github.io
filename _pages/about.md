@@ -14,7 +14,7 @@ My research interests are in developing graph representation learning models and
 ## Recent Publications
 
 {% for post in site.publications reversed limit:5 %}
-{% include archive-short.html %}
+{% include archive-short-publications.html %}
 {% endfor %}
 
 ## Education
