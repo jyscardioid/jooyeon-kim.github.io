@@ -44,12 +44,15 @@ def build_about(sheet: Spreadsheet, sheetname_list: List[str],
             lines.append(f"- {r.degree}, *{r.institution}*, {r.date}\n")
 
     def _academic_services(df: pd.DataFrame):
-        position_and_org_to_rs = defaultdict(list)
+        position_and_org_to_rs = defaultdict(lambda: defaultdict(list))
         for i, r in df.iterrows():
-            position_and_org_to_rs[(r.position, r.organization)].append(r)
-        for (p, o), rs in position_and_org_to_rs.items():
-            _years = [f"{r.year}" if r.url == "" else f"[{r.year}]({r.url})" for r in rs]
-            lines.append(f"- {p}: {o} ({', '.join(_years)})\n")
+            position_and_org_to_rs[r.position][r.organization].append(r)
+        for p, o_to_rs in position_and_org_to_rs.items():
+            _o_ys = []
+            for o, rs in o_to_rs.items():
+                _years = [f"{r.year}" if r.url == "" else f"[{r.year}]({r.url})" for r in rs]
+                _o_ys.append(f"{o} ({', '.join(_years)})")
+            lines.append(f"- {p}: {', '.join(_o_ys)}\n")
 
     def _teaching_experiences(df: pd.DataFrame):
         course_to_rs = defaultdict(list)
