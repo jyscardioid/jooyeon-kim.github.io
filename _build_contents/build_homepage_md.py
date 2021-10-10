@@ -1,6 +1,5 @@
 import os
 from collections import defaultdict
-from typing import List
 import re
 
 import gspread
@@ -36,8 +35,7 @@ def build_talks(sheet: Spreadsheet, output_dir="../_talks/"):
     _build_md_files(sheet, "talks", output_dir)
 
 
-def build_about(sheet: Spreadsheet, sheetname_list: List[str],
-                out_dir="../_pages/about.md"):
+def build_about(sheet: Spreadsheet, out_dir="../_pages/about.md"):
 
     def _education(df: pd.DataFrame):
         for i, r in df.iterrows():
@@ -77,30 +75,30 @@ def build_about(sheet: Spreadsheet, sheetname_list: List[str],
         for i, r in df.iterrows():
             lines.append(f"- [{r.title}]({r.url})\n")
 
-    lines = [sheet.worksheet("about").acell("A1").value, "\n"]
+    lines = []
 
-    for name in sheetname_list:
-        worksheet = sheet.worksheet(name)
-        tab = pd.DataFrame(worksheet.get_all_records())
+    about = pd.DataFrame(sheet.worksheet("about").get_all_records())
+    for idx, about_row in about.iterrows():
 
-        if len(tab.values) > 0:
-            lines.append(f"## {name.title()}\n\n")
+        if about_row.use == "FALSE":
+            continue
 
-        if name == "education":
-            _education(tab)
-        elif name == "academic services":
-            _academic_services(tab)
-        elif name == "teaching experiences":
-            _teaching_experiences(tab)
-        elif name == "honors":
-            _honors(tab)
-        elif name == "open source contributions":
-            _open_source_contributions(tab)
+        elif about_row.type == "text":
+            lines += [about_row.content, "\n" * 2]
+
+        elif about_row.type == "sheet":
+            name: str = about_row.content
+            worksheet = sheet.worksheet(name)
+            tab = pd.DataFrame(worksheet.get_all_records())
+
+            if len(tab.values) > 0:
+                lines.append(f"## {name.title()}\n\n")
+                func_name = "_" + name.replace(" ", "_")
+                locals()[func_name](tab)
+                lines.append("\n")
+
         else:
-            raise ValueError(f"Wrong name: {name}")
-
-        if len(tab.values) > 0:
-            lines.append("\n")
+            raise ValueError
 
     open(out_dir, "w").writelines(lines)
     print("".join(lines))
@@ -116,12 +114,7 @@ if __name__ == '__main__':
     sh = gc.open_by_url(__gsheet__)
 
     if __target__ == "about" or __target__ == "all":
-        build_about(
-            sheet=sh,
-            sheetname_list=["education", "academic services",
-                            "teaching experiences", "honors",
-                            "open source contributions"]
-        )
+        build_about(sheet=sh)
 
     if __target__ == "publications" or __target__ == "all":
         build_publications(sheet=sh)
