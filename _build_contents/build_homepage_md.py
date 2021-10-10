@@ -59,12 +59,15 @@ def build_about(sheet: Spreadsheet, out_dir="../_pages/about.md"):
         for i, r in df.iterrows():
             course_to_rs[r.course].append(r)
         for c, rs in course_to_rs.items():
-            head = ", ".join(f"{r.position} ({r.semester})" for r in rs)
-            course = f"of {c}"
-            codes = "/".join(f"{r.code}" if r.url == "" else f"[{r.code}]({r.url})" for r in rs)
+            positions = [r.position for r in rs]
+            positions = set(positions) if len(set(positions)) == 1 else positions
+            head = ", ".join(positions)
+            semesters = ", ".join(f"{r.semester}" if r.url == "" else f"[{r.semester}]({r.url})" for r in rs)
             notes = ", ".join(r.note for r in rs if r.note != "")
-            notes = notes if notes == "" else f"({notes})"
-            lines.append(" ".join(["-", head, course, codes, notes, "\n"]))
+            if notes == "":
+                lines.append(f"- {head} of {c} ({semesters})\n")
+            else:
+                lines.append(f"- {head} of {c} ({semesters}), *{notes}*\n")
 
     def _honors(df: pd.DataFrame):
         for i, r in df.iterrows():
@@ -109,7 +112,7 @@ def build_about(sheet: Spreadsheet, out_dir="../_pages/about.md"):
 
 if __name__ == '__main__':
 
-    __target__ = "all"
+    __target__ = "about"
     __gsheet__ = "https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/edit#gid=0"
 
     gc = gspread.oauth()
