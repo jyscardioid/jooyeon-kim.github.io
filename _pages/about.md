@@ -19,8 +19,8 @@ My research interests are in developing graph representation learning models and
 
 ## Education
 
-- M.S. School of Computing, *KAIST*, 2019.08
-- B.S. Major in School of Computing and Minor in Chemistry, *KAIST*, 2018.02
+- M.S. School of Computing, *KAIST*, Sep 2019
+- B.S. Major in School of Computing and Minor in Chemistry, *KAIST*, Feb 2018
 
 ## Academic Services
 

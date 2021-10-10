@@ -1,6 +1,7 @@
 import os
 from collections import defaultdict
 import re
+from datetime import datetime
 
 import gspread
 import pandas as pd
@@ -39,7 +40,8 @@ def build_about(sheet: Spreadsheet, out_dir="../_pages/about.md"):
 
     def _education(df: pd.DataFrame):
         for i, r in df.iterrows():
-            lines.append(f"- {r.degree}, *{r.institution}*, {r.date}\n")
+            dobj = datetime.strptime(r.date, "%Y-%m-%d")
+            lines.append(f"- {r.degree}, *{r.institution}*, {dobj.strftime('%b %Y')}\n")
 
     def _academic_services(df: pd.DataFrame):
         position_and_org_to_rs = defaultdict(lambda: defaultdict(list))
