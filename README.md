@@ -2,10 +2,11 @@
 
 ## Instructions from [dongkwan-kim](https://github.com/dongkwan-kim)
 
-1. Install `_build_contents/requirements.txt`.
-2. Update [Data for CV](https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/edit#gid=1901573817).
-3. Run `_build_contents/build_homepage_md.py`.
-4. Commit the changes.
+1. Create [credentials](https://docs.gspread.org/en/v4.0.1/oauth2.html#oauth-client-id) and put it to `~/.config/gspread/credentials.json`.
+2. Install `_build_contents/requirements.txt`.
+3. Update [Data for CV](https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/edit#gid=1901573817).
+4. Run `_build_contents/build_homepage_md.py`.
+5. Commit the changes.
 
 ## Original Readme
 
