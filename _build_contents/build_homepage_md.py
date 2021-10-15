@@ -112,7 +112,7 @@ def build_about(sheet: Spreadsheet, out_dir="../_pages/about.md"):
 
 if __name__ == '__main__':
 
-    __target__ = "about"
+    __target__ = "all"
     __gsheet__ = "https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/edit#gid=0"
 
     gc = gspread.oauth()
