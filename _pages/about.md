@@ -24,14 +24,14 @@ My research interests are in developing graph representation learning models and
 
 ## Academic Services
 
-- Reviewer: ICLR ([2020](https://iclr.cc/Conferences/2020), [2022](https://iclr.cc/Conferences/2022)), ICML GRL+ Workshop ([2020](https://grlplus.github.io/pcom/))
+- Reviewer: ICLR ([2020](https://iclr.cc/Conferences/2020), [2022](https://iclr.cc/Conferences/2022)), ICML GRL+ Workshop ([2020](https://grlplus.github.io/pcom/)), ACL ARR ([2021](https://openreview.net/group?id=aclweb.org/ACL/ARR/2021))
 - Student volunteer: ICLR ([2021](https://iclr.cc/Conferences/2021/Volunteers))
 
 ## Teaching Experiences
 
 - TA, Head TA of Data Structure (Spring 2018, Fall 2018)
 - Head TA, TA of Machine Learning for Natural Language Processing ([Fall 2019](https://aliceoh9.github.io/mlnlp), [Spring 2021](https://uilab-kaist.github.io/cs475-mlnlp-spring-2021/)), *Best TA Award at Fall 2019*
-- Head TA of Deep Learning for Real-world Problems ([Spring 2020](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83), Fall 2020), *Best TA Award at Spring 2020*
+- Head TA of Deep Learning for Real-world Problems ([Spring 2020](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83), [Fall 2020](https://docs.google.com/document/d/1SC3-pOZMqrObRbWusZCag9XYHHbKQ1gQQ1bEF_OOxbY/edit#)), *Best TA Award at Spring 2020*
 
 ## Open Source Contributions
 
