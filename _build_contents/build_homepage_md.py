@@ -1,16 +1,28 @@
+import math
 import os
 from collections import defaultdict
 import re
 from datetime import datetime
+from typing import List
 
 import gspread
 import pandas as pd
 from gspread import Spreadsheet
 
 
-def _build_md_files(sheet: Spreadsheet, name: str, output_dir):
-    worksheet = sheet.worksheet(name)
-    tab = pd.DataFrame(worksheet.get_all_records())
+def get_tab_df(sheet: Spreadsheet, sheet_path_list: List[str], tab_name) -> pd.DataFrame:
+    for sheet_path in sheet_path_list:
+        try:
+            df = pd.read_excel(sheet_path, tab_name)
+            return df.fillna("")
+        except FileNotFoundError:
+            pass
+    else:
+        return pd.DataFrame(sheet.worksheet(tab_name).get_all_records())
+
+
+def _build_md_files(sheet: Spreadsheet, sheet_path_list: List[str], name: str, output_dir):
+    tab = get_tab_df(sheet, sheet_path_list, name)
     for i, r in tab.iterrows():
         ym = re.compile(r"\d\d\d\d-\d\d").search(r.date).group()
         sv = re.compile(r"\((.*?)\)").search(r.venue).group(1)
@@ -28,15 +40,18 @@ def _build_md_files(sheet: Spreadsheet, name: str, output_dir):
             print(f"Saved at {file_path}")
 
 
-def build_publications(sheet: Spreadsheet, output_dir="../_publications/"):
-    _build_md_files(sheet, "publications", output_dir)
+def build_publications(sheet: Spreadsheet, sheet_path_list: List[str],
+                       output_dir="../_publications/"):
+    _build_md_files(sheet, sheet_path_list, "publications", output_dir)
 
 
-def build_talks(sheet: Spreadsheet, output_dir="../_talks/"):
-    _build_md_files(sheet, "talks", output_dir)
+def build_talks(sheet: Spreadsheet, sheet_path_list: List[str],
+                output_dir="../_talks/"):
+    _build_md_files(sheet, sheet_path_list, "talks", output_dir)
 
 
-def build_about(sheet: Spreadsheet, out_dir="../_pages/about.md"):
+def build_about(sheet: Spreadsheet, sheet_path_list: List[str],
+                out_dir="../_pages/about.md"):
 
     def _education(df: pd.DataFrame):
         for i, r in df.iterrows():
@@ -82,7 +97,8 @@ def build_about(sheet: Spreadsheet, out_dir="../_pages/about.md"):
 
     lines = []
 
-    about = pd.DataFrame(sheet.worksheet("about").get_all_records())
+    # about = pd.DataFrame(sheet.worksheet("about").get_all_records())
+    about = get_tab_df(sheet, sheet_path_list, "about")
     for idx, about_row in about.iterrows():
 
         if about_row.use == "FALSE":
@@ -93,8 +109,7 @@ def build_about(sheet: Spreadsheet, out_dir="../_pages/about.md"):
 
         elif about_row.type == "sheet":
             name: str = about_row.content
-            worksheet = sheet.worksheet(name)
-            tab = pd.DataFrame(worksheet.get_all_records())
+            tab = get_tab_df(sheet, sheet_path_list, name)
 
             if len(tab.values) > 0:
                 lines.append(f"## {name.title()}\n\n")
@@ -114,15 +129,16 @@ if __name__ == '__main__':
 
     __target__ = "all"
     __gsheet__ = "https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/edit#gid=0"
+    __path_1__ = "./Data for CV (Dongkwan Kim).xlsx"
 
     gc = gspread.oauth()
     sh = gc.open_by_url(__gsheet__)
 
     if __target__ == "about" or __target__ == "all":
-        build_about(sheet=sh)
+        build_about(sheet=sh, sheet_path_list=[__path_1__])
 
     if __target__ == "publications" or __target__ == "all":
-        build_publications(sheet=sh)
+        build_publications(sheet=sh, sheet_path_list=[__path_1__])
 
     if __target__ == "talks" or __target__ == "all":
-        build_talks(sheet=sh)
+        build_talks(sheet=sh, sheet_path_list=[__path_1__])
