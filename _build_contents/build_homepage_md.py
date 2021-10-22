@@ -97,8 +97,8 @@ def build_about(sheet: Spreadsheet, sheet_path_list: List[str],
 
     lines = []
 
-    # about = pd.DataFrame(sheet.worksheet("about").get_all_records())
-    about = get_tab_df(sheet, sheet_path_list, "about")
+    # about = pd.DataFrame(sheet.worksheet("about-page").get_all_records())
+    about = get_tab_df(sheet, sheet_path_list, "about-page")
     for idx, about_row in about.iterrows():
 
         if about_row.use == "FALSE":

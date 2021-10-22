@@ -12,6 +12,24 @@ def save_lines(lines, output_dir, output_name):
         print(f"Save at {full_path}")
 
 
+def change_md_href_to_text_href(md: str) -> str:
+    for text, link in re.findall(r"\[(.+?)\]\((.+?)\)", md):
+        tex_link = f"\\href{{{link}}}{{{text}}}"
+        md_link = f"[{text}]({link})"
+        md = md.replace(md_link, tex_link)
+    return md
+
+
+def _build_about_text(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str):
+    tab = get_tab_df(sheet, sheet_path_list, tab_name)
+    lines = [rf"\cvsection{{{tab_name.title()}}}", "\n" * 2]
+    for i, r in tab.iterrows():
+        tex_text = change_md_href_to_text_href(r.text)
+        lines += [tex_text, "\n" * 2]
+    lines.append(r"\hfill \break")
+    return lines
+
+
 def _build_cventry(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str,
                    keys: List[str], out_date_format):
     # education
@@ -145,6 +163,10 @@ if __name__ == '__main__':
 
     gc = gspread.oauth()
     sh = gc.open_by_url(__gsheet__)
+
+    if __target__ == "about" or __target__ == "all":
+        tex = _build_about_text(sh, [__path_1__], "about")
+        save_lines(tex, __dir__, "about.tex")
 
     if __target__ == "education" or __target__ == "all":
         tex = _build_cventry(sh, [__path_1__], "education",
