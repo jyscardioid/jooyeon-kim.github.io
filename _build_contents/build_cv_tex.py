@@ -82,7 +82,8 @@ def _build_cvpubs(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str,
         for i, r in sorted(df.iterrows(), key=lambda _ir: _ir[1].date, reverse=True):
             _presenters = r.presenters.replace(me, rf"\textbf{{{me}}}")
             _date = datetime.strptime(r.date, "%Y-%m-%d").strftime("%d %b %Y")
-            _talk = rf'{_presenters}. \href{{{r.slideurl}}}{{``{r.title}."}} \textit{{{r.venue}}}. {_date}'
+            _venue = rf'\href{{{r.venueurl}}}{{{r.venue}}}'
+            _talk = rf'{_presenters}. \href{{{r.slideurl}}}{{``{r.title}."}} \textit{{{_venue}}}. {_date}'
             lines += [rf"  \cvpub{{{_talk}}}", "\n" * 2]
         lines += [r"\end{cvpubs}"]
 
