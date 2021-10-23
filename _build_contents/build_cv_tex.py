@@ -22,11 +22,11 @@ def change_md_href_to_text_href(md: str) -> str:
 
 def _build_about_text(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str):
     tab = get_tab_df(sheet, sheet_path_list, tab_name)
-    lines = [rf"\cvsection{{{tab_name.title()}}}", "\n" * 2]
+    lines = [rf"\cvsection{{{tab_name.title()}}}", "\n" * 2, r"{\small", "\n" * 2]
     for i, r in tab.iterrows():
         tex_text = change_md_href_to_text_href(r.text)
         lines += [tex_text, "\n" * 2]
-    lines.append(r"\hfill \break")
+    lines += ["}", "\n" * 2, r"\hfill \break"]
     return lines
 
 
