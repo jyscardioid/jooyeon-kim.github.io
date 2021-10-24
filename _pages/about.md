@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student at KAIST School of Computing, advised by [Alice Oh](https://aliceoh9.github.io/).
-My research interests are in developing graph representation learning models and applying them for various domains: social networks, codes, or chemicals.
+I am a third-year Ph.D. student at [KAIST School of Computing](https://cs.kaist.ac.kr/), advised by [Alice Oh](https://aliceoh9.github.io/). My research interests are in developing graph neural networks for various domains: social networks, codes, or chemicals. In particular, I focus on (1) leveraging the inherent information in the graph structure (e.g., edges, subgraphs, or temporal snapshots) and (2) analyzing the model performance by characteristics of graph datasets (e.g., homophily, average degree, or density).
 
 ## Recent Publications
 
@@ -20,7 +19,13 @@ My research interests are in developing graph representation learning models and
 ## Education
 
 - M.S. School of Computing, *KAIST*, Sep 2019
-- B.S. Major in School of Computing and Minor in Chemistry, *KAIST*, Feb 2018
+- B.S. Major in Computer Science and Minor in Chemistry, *KAIST*, Feb 2018
+
+## Talks
+
+{% for post in site.talks reversed limit:5 %}
+{% include archive-short-talks.html %}
+{% endfor %}
 
 ## Academic Services
 
@@ -31,7 +36,7 @@ My research interests are in developing graph representation learning models and
 
 - TA, Head TA of Data Structure (Spring 2018, Fall 2018)
 - Head TA, TA of Machine Learning for Natural Language Processing ([Fall 2019](https://aliceoh9.github.io/mlnlp), [Spring 2021](https://uilab-kaist.github.io/cs475-mlnlp-spring-2021/)), *Best TA Award at Fall 2019*
-- Head TA of Deep Learning for Real-world Problems ([Spring 2020](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83), [Fall 2020](https://docs.google.com/document/d/1SC3-pOZMqrObRbWusZCag9XYHHbKQ1gQQ1bEF_OOxbY/edit#)), *Best TA Award at Spring 2020*
+- Head TA of Deep Learning for Real-world Problems ([Spring 2020](https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=9172&menu=83), [Fall 2020](https://docs.google.com/document/d/1SC3-pOZMqrObRbWusZCag9XYHHbKQ1gQQ1bEF_OOxbY)), *Best TA Award at Spring 2020*
 
 ## Open Source Contributions
 
