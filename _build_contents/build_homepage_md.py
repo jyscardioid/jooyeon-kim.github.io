@@ -131,8 +131,11 @@ if __name__ == '__main__':
     __gsheet__ = "https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/edit#gid=0"
     __path_1__ = "./Data for CV (Dongkwan Kim).xlsx"
 
-    gc = gspread.oauth()
-    sh = gc.open_by_url(__gsheet__)
+    try:
+        gc = gspread.oauth()
+        sh = gc.open_by_url(__gsheet__)
+    except:
+        gc, sh = None, None
 
     if __target__ == "about" or __target__ == "all":
         build_about(sheet=sh, sheet_path_list=[__path_1__])
