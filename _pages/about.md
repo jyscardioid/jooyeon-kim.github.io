@@ -30,7 +30,8 @@ I am a third-year Ph.D. student at [KAIST School of Computing](https://cs.kaist.
 ## Academic Services
 
 - Reviewer: ICLR ([2020](https://iclr.cc/Conferences/2020), [2022](https://iclr.cc/Conferences/2022)), ICML GRL+ Workshop ([2020](https://grlplus.github.io/pcom/)), ACL ARR ([2021](https://openreview.net/group?id=aclweb.org/ACL/ARR/2021))
-- Student volunteer: ICLR ([2021](https://iclr.cc/Conferences/2021/Volunteers))
+- Student volunteer: ICLR Social ML in Korea ([2020](https://twitter.com/aliceoh/status/1256032213226815488)), ICLR ([2021](https://iclr.cc/Conferences/2021/Volunteers))
+- Organizer: KAIST AI Workshop ([2022](https://mars-ai.github.io/kaist-ai-workshop-2022))
 
 ## Teaching Experiences
 
