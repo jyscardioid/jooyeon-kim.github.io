@@ -60,7 +60,8 @@ def _build_cvpubs(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str,
     # publications, services, talks, teaching
     def _publications(df: pd.DataFrame, lines, subsec_key: str):
         subsec_counter = Counter(getattr(r, subsec_key) for i, r in df.iterrows())
-        for subsec, counts in subsec_counter.items():
+        for subsec, counts in sorted(subsec_counter.items(), key=lambda kv: kv[0]):
+            # sort [conference, workshop]
             lines += [rf"\cvsubsection{{{subsec.title()}}}", "\n" * 2]
             lines += [r"\begin{cvpubs}", "\n" * 2]
             for i, r in sorted(df.iterrows(), key=lambda _ir: _ir[1].date, reverse=True):
@@ -162,8 +163,11 @@ if __name__ == '__main__':
 
     os.makedirs(__dir__, exist_ok=True)
 
-    gc = gspread.oauth()
-    sh = gc.open_by_url(__gsheet__)
+    try:
+        gc = gspread.oauth()
+        sh = gc.open_by_url(__gsheet__)
+    except:
+        gc, sh = None, None
 
     if __target__ == "about" or __target__ == "all":
         tex = _build_about_text(sh, [__path_1__], "about")
