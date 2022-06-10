@@ -10,9 +10,13 @@ redirect_from:
 
 I am a postdoctoral researcher in team [Approximate Bayesian Inference (ABI)](https://team-approx-bayes.github.io/) at [RIKEN Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/). I strive to derive human-like machine intelligence from interactive and autonomous learning experiences. I focus on exploiting/uncovering the merits of Bayesian learning that provides principled way of allowing machine intelligence to adapt and generalize to unseen data/environments in conjunction with the deep learning models and frameworks.
 
-## Publications
+2020 - 2021 Researcher at Microsoft Research Cambridge
+2019 Research Intern at Microsoft Research Cambridge
+2017 Research Intern at Max Planck Institute for Software Systems
 
-{% for post in site.publications reversed limit:30 %}
+## Recent Publications
+
+{% for post in site.publications reversed limit:5 %}
 {% include archive-short-publications.html %}
 {% endfor %}
 
