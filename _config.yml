@@ -83,7 +83,7 @@ author:
   name             : "Jooyeon Kim"
   edit_url         : "https://docs.google.com/spreadsheets/d/1-MnEqSRy2r_JrfeXJjh2IvUUUFyeZl-DZDuh3tH1L3U/"
   cv_url           : "https://drive.google.com/file/d/1tKtRWj8xcw_SRP3Bp5rLiSie6tNdyGLq/?usp=sharing"
-  avatar           : "/images/thumbnail.png"
+  avatar           : "./images/thumbnail.png"
   bio              : "Postdoctoral Researcher at RIKEN AIP"
   location         : "Rep. of Korea"
   employer         :
