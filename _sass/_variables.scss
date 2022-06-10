@@ -49,16 +49,14 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
-$gray                       : #232F34;
+$gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-// $my-primary-color: #E3A397;
-// $my-secondary-color: #F2E4E4;
-$my-primary-color: #303F9F
-$my-secondary-color: #BDBDBD
+$my-primary-color: #E3A397;
+$my-secondary-color: #F2E4E4;
 
 $body-color                 : #16181c;
 $background-color           : #16181c;
