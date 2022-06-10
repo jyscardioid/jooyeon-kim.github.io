@@ -28,7 +28,7 @@ I am a postdoctoral researcher in team [Approximate Bayesian Inference (ABI)](ht
 - M.S., School of Computing, *KAIST*, 2016
 - B.E., Department of Systems Innovation, *The University of Tokyo*, 2014
 
-## Talks
+<!-- ## Talks
 
 {% for post in site.talks reversed limit:5 %}
 {% include archive-short-talks.html %}
@@ -49,5 +49,5 @@ I am a postdoctoral researcher in team [Approximate Bayesian Inference (ABI)](ht
 
 ## Open Source Contributions
 
-- [PyG (PyTorch Geometric)](https://github.com/pyg-team/pytorch_geometric/graphs/contributors)
+- [PyG (PyTorch Geometric)](https://github.com/pyg-team/pytorch_geometric/graphs/contributors) -->
 
