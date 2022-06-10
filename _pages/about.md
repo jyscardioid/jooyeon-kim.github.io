@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoctoral researcher in team [Approximate Bayesian Inference (ABI)](https://team-approx-bayes.github.io/) at [RIKEN Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/). I strive to derive human-like machine intelligence from interactive and autonomous learning experiences. I focus on exploiting/uncovering the merits of Bayesian learning that provides principled way of allowing machine intelligence to adapt and generalize to unseen data/environments in conjunction with the deep learning models and frameworks.
+I am a postdoctoral researcherr in team [Approximate Bayesian Inference (ABI)](https://team-approx-bayes.github.io/) at [RIKEN Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/). I strive to derive human-like machine intelligence from interactive and autonomous learning experiences. I focus on exploiting/uncovering the merits of Bayesian learning that provides principled way of allowing machine intelligence to adapt and generalize to unseen data/environments in conjunction with the deep learning models and frameworks.
 
 ## Recent Publications
 
