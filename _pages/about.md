@@ -18,8 +18,9 @@ I am a postdoctoral researcher in team [Approximate Bayesian Inference (ABI)](ht
 
 ## Education
 
-- M.S. School of Computing, *KAIST*, Sep 2019
-- B.S. Major in Computer Science and Minor in Chemistry, *KAIST*, Feb 2018
+- Ph.D., School of Computing, *KAIST*, 2020
+- M.S., School of Computing, *KAIST*, 2016
+- B.E., Department of Systems Innovation, *The University of Tokyo*, 2014
 
 ## Talks
 

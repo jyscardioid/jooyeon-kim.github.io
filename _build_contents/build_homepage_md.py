@@ -56,7 +56,7 @@ def build_about(sheet: Spreadsheet, sheet_path_list: List[str],
     def _education(df: pd.DataFrame):
         for i, r in df.iterrows():
             dobj = datetime.strptime(r.date, "%Y-%m-%d")
-            lines.append(f"- {r.degree}, *{r.institution}*, {dobj.strftime('%b %Y')}\n")
+            lines.append(f"- {r.degree}, *{r.institution}*, {dobj.strftime('%Y')}\n")
 
     def _academic_services(df: pd.DataFrame):
         position_and_org_to_rs = defaultdict(lambda: defaultdict(list))
