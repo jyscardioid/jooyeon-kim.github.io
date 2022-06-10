@@ -157,9 +157,9 @@ def _build_cvhonor(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str
 if __name__ == '__main__':
 
     __target__ = "all"
-    __gsheet__ = "https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/"
+    __gsheet__ = "https://docs.google.com/spreadsheets/d/1-MnEqSRy2r_JrfeXJjh2IvUUUFyeZl-DZDuh3tH1L3U/"
     __dir__ = "./cv/"
-    __path_1__ = "./Data for CV (Dongkwan Kim).xlsx"
+    __path_1__ = "./Data for CV (Jooyeon Kim).xlsx"
 
     os.makedirs(__dir__, exist_ok=True)
 
