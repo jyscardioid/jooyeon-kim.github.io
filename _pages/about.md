@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoctoral researcher at [RIKEN Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/), in [Approximate Bayesian Inference (ABI) team](https://team-approx-bayes.github.io/). I strive to derive human-like machine intelligence from interactive and autonomous learning experiences. I focus on exploiting/uncovering the merits of Bayesian learning that provides principled way of allowing machine intelligence to adapt and generalize to unseen data/environments in conjunction with the deep learning models and frameworks.
+Jooyeon Kim!!
 
 ## Recent Publications
 
@@ -18,9 +18,8 @@ I am a postdoctoral researcher at [RIKEN Center for Advanced Intelligence Projec
 
 ## Education
 
-- Ph.D., School of Computing, *KAIST*, 2020
-- M.S., School of Computing, *KAIST*, 2016
-- B.E.,Department of Systems Innovation, *The University of Tokyo*, 2014
+- M.S. School of Computing, *KAIST*, Sep 2019
+- B.S. Major in Computer Science and Minor in Chemistry, *KAIST*, Feb 2018
 
 ## Talks
 

@@ -128,8 +128,8 @@ def build_about(sheet: Spreadsheet, sheet_path_list: List[str],
 if __name__ == '__main__':
 
     __target__ = "all"
-    __gsheet__ = "https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/edit#gid=0"
-    __path_1__ = "./Data for CV (Dongkwan Kim).xlsx"
+    __gsheet__ = "https://docs.google.com/spreadsheets/d/1-MnEqSRy2r_JrfeXJjh2IvUUUFyeZl-DZDuh3tH1L3U/"
+    __path_1__ = "./Data for CV (Jooyeon Kim).xlsx"
 
     try:
         gc = gspread.oauth()
