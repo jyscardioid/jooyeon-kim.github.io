@@ -45,7 +45,7 @@
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' %}
       <p>
-        {{post.authors | replace: "Dongkwan Kim", "<strong>Dongkwan Kim</strong>"}}.
+        {{post.authors | replace: "Jooyeon Kim", "<strong>Jooyeon Kim</strong>"}}.
         <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
       </p>
     {% elsif post.date %}
@@ -75,7 +75,7 @@
       <a href=" {{ post.paperurl }} " target="_blank">Paper</a>
       {% if post.arxivurl %}<a href=" {{ post.arxivurl }} " target="_blank">arXiv</a>{% endif %}
       {% if post.codeurl %}<a href=" {{ post.codeurl }} " target="_blank">Code</a>{% endif %}
-      {% if post.dataurl %}<a href=" {{ post.dataurl }} " target="_blank">Data</a>{% endif %}
+      {% if post.dataurl %}<a href=" {{ post.dataurl }} " target="_blank">Website</a>{% endif %}
       {% if post.posterurl %}<a href=" {{ post.posterurl }} " target="_blank">Poster</a>{% endif %}
       {% if post.slideurl %}<a href=" {{ post.slideurl }} " target="_blank">Slide</a>{% endif %}
     </p>

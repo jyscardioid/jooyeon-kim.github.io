@@ -39,7 +39,7 @@ layout: default
           <a href=" {{ page.paperurl }} " target="_blank">Paper</a>
           {% if page.arxivurl %}<a href=" {{ page.arxivurl }} " target="_blank">arXiv</a>{% endif %}
           {% if page.codeurl %}<a href=" {{ page.codeurl }} " target="_blank">Code</a>{% endif %}
-          {% if page.dataurl %}<a href=" {{ page.dataurl }} " target="_blank">Data</a>{% endif %}
+          {% if page.dataurl %}<a href=" {{ page.dataurl }} " target="_blank">Website</a>{% endif %}
           {% if page.posterurl %}<a href=" {{ page.posterurl }} " target="_blank">Poster</a>{% endif %}
           {% if page.slideurl %}<a href=" {{ page.slideurl }} " target="_blank">Slide</a>{% endif %}
         </p>
@@ -49,7 +49,7 @@ layout: default
         <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
         <p>
-          {{page.authors | replace: "Dongkwan Kim", "<strong>Dongkwan Kim</strong>"}}.
+          {{page.authors | replace: "Jooyeon Kim", "<strong>Jooyeon Kim</strong>"}}.
           <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
         </p>
         {% elsif page.date %}

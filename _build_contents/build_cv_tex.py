@@ -56,7 +56,7 @@ def _build_cventry(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str
     return lines
 
 
-def _build_cvpubs(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str, me="Dongkwan Kim"):
+def _build_cvpubs(sheet: Spreadsheet, sheet_path_list: List[str], tab_name: str, me="Jooyeon Kim"):
     # publications, services, talks, teaching
     def _publications(df: pd.DataFrame, lines, subsec_key: str):
         subsec_counter = Counter(getattr(r, subsec_key) for i, r in df.iterrows())
