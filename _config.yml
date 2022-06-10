@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Dongkwan Kim"
+title                    : "Jooyeon Kim"
 title_separator          : "-"
-name                     : &name "Dongkwan Kim"
+name                     : &name "Jooyeon Kim"
 description              : &description "personal description"
-url                      : https://dongkwan-kim.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://jooyeon-kim.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "dongkwan-kim/dongkwan-kim.github.io"
+repository               : "jyscardioid/jooyeon-kim.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
@@ -23,7 +23,7 @@ talkmap_link             : false #change to true to add link to talkmap on talks
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "dongkwan-kim"
+    shortname            : "jooyeon-kim"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -80,16 +80,16 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dongkwan Kim"
+  name             : "Jooyeon Kim"
   edit_url         : "https://docs.google.com/spreadsheets/d/1QeeQhPYIeTiCTJNczKSfenHCYGMLf3a2vvzCor1Gd2A/"
   cv_url           : "https://drive.google.com/file/d/10HAaltwluySOVl9uKMOTVQ_bomlNzpRB/view?usp=sharing"
-  avatar           : "https://uilab-github.github.io/assets/images/members/dongkwan_kim.jpg"
-  bio              : "Ph.D Student of KAIST School of Computing"
+  avatar           : "https://uilab-github.github.io/assets/images/members/jooyeon_kim.jpg"
+  bio              : "Postdoctoral Researcher at RIKEN AIP"
   location         : "Rep. of Korea"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?user=KgjSE64AAAAJ"
-  email            : dongkwan.kim@kaist.ac.kr
+  googlescholar    : "https://scholar.google.com/citations?user=ie5WNHcAAAAJ"
+  email            : jooyeon.kim@riken.jp
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -98,20 +98,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "dongkwan-kim"
+  github           : "jyscardioid"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "dongkwan-kim"
+  linkedin         : "jooyeon--kim"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "_dongkwan_kim"
+  twitter          : "jyscardioid"
   vine             :
   weibo            :
   xing             :
