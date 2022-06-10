@@ -14,12 +14,12 @@
     color: black!important;
     text-decoration: none!important;
     padding: .0em .4em;
-    background-color: $my-primary-color;
+    background-color: $my-secondary-color;
     display: inline-block;
     transition: all .5s ease;
     border-radius: 4px;
     &:hover {
-      background-color: $my-secondary-color;
+      background-color: $my-primary-color;
     }
   }
 }
