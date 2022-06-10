@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year Ph.D. student at [KAIST School of Computing](https://cs.kaist.ac.kr/), advised by [Alice Oh](https://aliceoh9.github.io/). My research interests are in developing graph neural networks for various domains: social networks, codes, or chemicals. In particular, I focus on (1) leveraging the inherent information in the graph structure (e.g., edges, subgraphs, or temporal snapshots) and (2) analyzing the model performance by characteristics of graph datasets (e.g., homophily, average degree, or density).
+I am a postdoctoral researcher in [Approximate Bayesian Inference (ABI) team](https://team-approx-bayes.github.io/) at [RIKEN Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/). I strive to derive human-like machine intelligence from interactive and autonomous learning experiences. I focus on exploiting/uncovering the merits of Bayesian learning that provides principled way of allowing machine intelligence to adapt and generalize to unseen data/environments in conjunction with the deep learning models and frameworks.
 
 ## Recent Publications
 
@@ -18,8 +18,9 @@ I am a third-year Ph.D. student at [KAIST School of Computing](https://cs.kaist.
 
 ## Education
 
-- M.S. School of Computing, *KAIST*, Sep 2019
-- B.S. Major in Computer Science and Minor in Chemistry, *KAIST*, Feb 2018
+- Ph.D., School of Computing, *KAIST*, 2020
+- M.S., School of Computing, *KAIST*, 2016
+- B.E.,Department of Systems Innovation, *The University of Tokyo*, 2014
 
 ## Talks
 
