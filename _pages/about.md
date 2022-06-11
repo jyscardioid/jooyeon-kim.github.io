@@ -18,7 +18,7 @@ I am a postdoctoral researcher in team [Approximate Bayesian Inference (ABI)](ht
 
 ## Recent Publications
 
-{% for post in site.publications reversed limit:5 %}
+{% for post in site.publications reversed limit:30 %}
 {% include archive-short-publications.html %}
 {% endfor %}
 
