@@ -8,7 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoctoral researcher in team [Approximate Bayesian Inference (ABI)](https://team-approx-bayes.github.io/) at [RIKEN Center for Advanced Intelligence Project (AIP)](https://www.riken.jp/en/research/labs/aip/). I strive to derive human-like machine intelligence from interactive and autonomous learning experiences. I focus on exploiting/uncovering the merits of Bayesian learning that provides principled way of allowing machine intelligence to adapt and generalize to unseen data/environments in conjunction with the deep learning models and frameworks.
+I am an assistant professor at [AIGS, UNIST](https://aigs.unist.ac.kr/). 
+I strive to derive human-like machine intelligence from interactive and autonomous learning experiences. I focus on exploiting/uncovering the merits of Bayesian learning that provides principled way of allowing machine intelligence to adapt and generalize to unseen data/environments in conjunction with the deep learning models and frameworks.
+
+2021 - 2023 Postdoctoral Researcher at [RIKEN, AIP](https://www.riken.jp/en/research/labs/aip/): Team [approximate Bayesian inference (ABI)]((https://team-approx-bayes.github.io/)
 
 2020 - 2021 Researcher at Microsoft Research Cambridge
 
