@@ -11,6 +11,8 @@ redirect_from:
 I am an assistant professor at [AIGS, UNIST](https://aigs.unist.ac.kr/). 
 I strive to derive human-like machine intelligence from interactive and autonomous learning experiences. I focus on exploiting/uncovering the merits of Bayesian learning that provides principled way of allowing machine intelligence to adapt and generalize to unseen data/environments in conjunction with the deep learning models and frameworks.
 
+If you are interested in working with me, send me an email or visit the [lab page](https://bayesian.unist.ac.kr).
+
 2021 - 2023 Postdoctoral Researcher at [RIKEN, AIP](https://www.riken.jp/en/research/labs/aip/): Team [approximate Bayesian inference (ABI)]((https://team-approx-bayes.github.io/)
 
 2020 - 2021 Researcher at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/)
