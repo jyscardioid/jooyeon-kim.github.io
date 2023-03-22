@@ -13,11 +13,11 @@ I strive to derive human-like machine intelligence from interactive and autonomo
 
 2021 - 2023 Postdoctoral Researcher at [RIKEN, AIP](https://www.riken.jp/en/research/labs/aip/): Team [approximate Bayesian inference (ABI)]((https://team-approx-bayes.github.io/)
 
-2020 - 2021 Researcher at Microsoft Research Cambridge
+2020 - 2021 Researcher at [Microsoft Research Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/)
 
 2019 Research Intern at Microsoft Research Cambridge
 
-2017 Research Intern at Max Planck Institute for Software Systems
+2017 Research Intern at [Max Planck Institute for Software Systems](https://www.mpi-sws.org/)
 
 ## Recent Publications
 
